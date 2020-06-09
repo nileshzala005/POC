@@ -1,0 +1,52 @@
+.header {
+  background-color: #C2F5AA;
+  margin          : 0px;
+  margin-bottom   : 15px;
+  margin-top      : 15px
+}
+
+.header-image {
+  background-color: #C2F5AA;
+  border          : 0px;
+}
+
+.header-row {
+  display    : flex;
+  align-items: center;
+}
+
+.header-content {
+  background-color: #C2F5AA;
+  text-align      : -webkit-center;
+  font-size       : xx-large;
+}
+
+.price {
+  background   : #000000;
+  color        : #ffffff;
+  margin       : 10px;
+  padding      : 7px;
+  border-radius: 5px;
+  text-align   : center;
+  font-size    : smaller
+}
+
+.card-title {
+  color: #e82020 !important;
+}
+
+.card-subtitle {
+  color: #26A042 !important;
+}
+
+.card {
+  margin-bottom: 15px !important;
+}
+
+.card-overlay-content {
+  position: absolute;
+  top     : 0;
+  right   : 0;
+  bottom  : 0;
+  padding : 1.25rem;
+}

@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row header">
+    <div class="col-md">
+      <img class="img-thumbnail header-image" src="../assets/images/projects.png">
+    </div>
+    <div class="col-md header-row">
+      <div class="float-right header-content">
+        Our environment projects are providing <br />
+        many enviromental benifits around the world.
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6" *ngFor="let tile of tiles">
+      <div class="card-deck">
+        <div class="card">
+          <img class="card-img-top" src={{tile.imageUrl}} alt={{tile.title}}>
+          <div class="card-img-overlay">
+            <div class="card-overlay-content" *ngIf="tile.buyNowActive" >
+              <button type="button" class="btn btn-success btn-lg">Buy Now</button><br/>
+              <label class="price" *ngIf="tile.price"> {{tile.price}}</label>
+            </div>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">{{tile.title}}</h4>
+            <h6 class="card-subtitle mb-2 text-muted">{{tile.subTitle}}</h6>
+            <p class="card-text">
+              {{tile.description}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
